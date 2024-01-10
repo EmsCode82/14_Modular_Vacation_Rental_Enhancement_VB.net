@@ -195,7 +195,7 @@
 
         If radPeak.Checked Then
             If dblSubTotal > 500 Then
-                MessageBox.Show(ToString(dblSubTotal), "Your Discount")
+                MessageBox.Show("$" & dblSubTotal.ToString("F2"), "Your Discount")
                 MessageBox.Show("The maximum discount for the Peak Season is $500, The Maximum Discount will be applied.")
                 dblSubTotal = dblSubTotal + dblSubTotal - 500
             End If
